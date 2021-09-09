@@ -1,0 +1,96 @@
+.maindiv{
+    display:grid;
+    position: relative;
+    width: 512px;
+    height: 512px;
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(32px, 1fr));
+    outline:0.1px solid rgb(202, 202, 202);
+    border:none;
+    z-index: 1;
+    top:-208px;
+    left:50%;
+    transform: translate(-50%);
+    box-shadow: 1px 1px 7px 5px rgb(224, 224, 224);
+    
+
+}
+
+.opdiv{
+    width:32px;
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    border:none;
+    outline:none;
+}
+#slider{
+    position: absolute;
+    top:745px;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 3;
+    width:200px;
+    height: 20px;
+}
+.pp{
+    position: absolute;
+    top:745px;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 4;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+
+}
+#picker{
+    width: 70px;
+    height: 70px;
+    box-shadow: 1px 1px 7px 3px rgb(175, 175, 175);
+    border: 0.1px solid rgb(207, 207, 207);
+} 
+#leftside{
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top:250px;
+    gap:50px;
+    left:20%;
+    max-width: 12%;
+    
+}
+.buttons{
+    width: 190px;
+    height: 40px;
+    border:none;
+    outline: none;
+    border-radius: 5%;
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 0.5px;
+    background-color: gray;
+    box-shadow: 1px 1px 7px 3px rgb(175, 175, 175);
+    
+}
+#clrmode{
+    background-color: gray;
+    border:none;
+    outline: none;
+    border-radius: 5%;
+    color:white;
+}
+body{
+    overflow:hidden;
+}
+
+@media only screen and(max-width:1530px)
+{
+    #leftside{
+        left:0px;
+    }   
+}
