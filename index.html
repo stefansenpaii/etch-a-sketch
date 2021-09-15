@@ -7,8 +7,13 @@
         <link rel="icon" type="image/png" sizes="32x32" href="styles/brush.jpg">
     </head>
     <body>
-            <input type="range" min="1" max="64" value="16" id="slider">
+        <div id="wholediv">
+             <div id="helper"></div>
+        <div id="drawing">
             <p id="value" class="pp">16x16</p>
+            <input type="range" min="1" max="64" value="16" id="slider">
+            
+        </div>
             <div id="leftside">
                 <input type="color" id="picker" value="#202020">
                 <input type="button" class="buttons" id="clrmode" value="Color Mode">
@@ -16,5 +21,6 @@
                 <input type="button" class="buttons" id="eraser" value="Eraser">
                 <input type="button" class="buttons" id="clear" value="Clear">
             </div>
+        </div>
     </body>
 </html>
