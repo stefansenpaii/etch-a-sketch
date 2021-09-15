@@ -8,7 +8,7 @@ for(let i=0;i<256;i++)
     div.appendChild(divx);
 }
 
-const move = document.querySelector('body');
+const move = document.querySelector("#drawing");
 move.appendChild(div);
 
 
